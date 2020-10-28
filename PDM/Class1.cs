@@ -21,7 +21,7 @@ public class Class1 : IEdmAddIn5
     {
 
         poInfo.mbsAddInName = "C# Add-in";
-        poInfo.mbsCompany = "My Company";
+        poInfo.mbsCompany = "Artrans S.A";
         poInfo.mbsDescription = "Menu add-in that shows a message box.";
         poInfo.mlAddInVersion = 1;
 
@@ -74,7 +74,7 @@ public class Class1 : IEdmAddIn5
 
 
         string message = null;
-        message = "";
+        message = "sasasa";
         int index = 0;
        // index = Information.LBound(ppoData);
         index = ppoData.GetLowerBound(0);
