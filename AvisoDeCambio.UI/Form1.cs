@@ -2,9 +2,10 @@
 using AvisoDeCambio.Service;
 using System;
 using System.Collections.Generic;
+using System.Windows.Controls;
 using System.Windows.Forms;
-
-
+using TextBox = System.Windows.Controls.TextBox;
+using WebBrowser = System.Windows.Forms.WebBrowser;
 
 namespace AvisoDeCambio.UI
 {
@@ -132,8 +133,7 @@ namespace AvisoDeCambio.UI
 
 
         {
-
-
+           
             var aviso = new Aviso
             {
                 NotaVenta = "13054",
@@ -206,7 +206,8 @@ namespace AvisoDeCambio.UI
             }
             MailDeRev.EnviarCorreo(aviso);
         }
+       
 
-        
+       
     }
 }

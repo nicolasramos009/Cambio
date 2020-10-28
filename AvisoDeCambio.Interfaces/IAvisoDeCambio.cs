@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 
+
 namespace AvisoDeCambio.Interfaces
 {
-    public interface IAvisoDeCambio
+    public interface IAvisoDeCambio 
     {
         string NotaVenta { get; set; }
         String Potencia { get; set; }
@@ -12,13 +13,17 @@ namespace AvisoDeCambio.Interfaces
         string CodigoTrafo { get; set; }
         string Tensiones { get; set; }
         string Cliente { get; set; }
+
     }
     public class Aviso : IAvisoDeCambio
     {
         public string NotaVenta { get; set; }
         public String Potencia { get; set; }
         public IList<PlanoUI> PlanosLista { get; set; } = new List<PlanoUI>();
-        public IEnumerable<string> To { get; set; } = new List<string> { "nramos@artrans.com.ar", "nramos@artrans.com.ar" };
+        public IEnumerable<string> To { get; set; } = new List<string> { "nramos@artrans.com.ar" };
+
+     
+
         public string CodigoTrafo { get; set; }
         public string Tensiones { get; set; }
         public string Cliente { get; set; }

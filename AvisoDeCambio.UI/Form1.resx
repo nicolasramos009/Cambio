@@ -117,4 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>        Estado del proceso
+
+                No iniciado: Todavía no se inició la tarea de fabricación o compra para este artículo.
+
+                Con orden de compra: Se compró pero es posible su modificación.
+
+                En proceso: Ya comenzaron las tareas de fabricación.
+
+                Terminado: La pieza fue fabricada o comprada según las condiciones originales.
+
+        Acción a seguir
+                    
+                Procesar con última revisión: La pieza, parte o artículo será procesada con el último plano disponible al momento.
+
+                Dejar como está: La pieza , parte o artículo se mantendrá sin cambios hasta que finalice el proceso, y las modificaciones se realizarán a partir de las próximas piezas , partes o artículos que deban procesarse. Esto se
+                da para el caso en que la modificación no afecta el buen desempeño de la pieza , parte o artículo, pero implica una mejora a futuro.
+            
+                Retrabajar: Sobre la pieza , parte o artículo procesada o en proceso, deben hacerse la modificaciones indicadas. Esto se da en el caso de que las modificaciones son necesarias para el buen funcionamiento de la
+                pieza , parte o artículo, pero son agregados que no afectan a lo que ya se encontraba procesado o en proceso.
+            
+                Enviar a Scrapp: Las piezas , partes o artículos, procesadas o en proceso, deben desecharse y procesarse de nuevo. Esto se da en el caso de que las piezas , partes o artículos no pueden utilizarse de ninguna 
+                manera, ya que su desempeño es inaceptable, y además no pueden ser reformadas para lograr su aceptación.</value>
+  </data>
 </root>
