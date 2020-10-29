@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +14,13 @@ namespace AvisoDeCambio.Interfaces
         public IEnumerable<string> To { get; set; } = new List<string> { "nramos@artrans.com.ar", "nramos@artrans.com.ar" };
         public string CodigoTrafo { get; set; }
         public string Tensiones { get; set; }
+        string IAvisoDeCambio.NotaVenta { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        string IAvisoDeCambio.Potencia { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        IList<PlanoUI> IAvisoDeCambio.PlanosLista { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        IEnumerable<string> IAvisoDeCambio.To { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        string IAvisoDeCambio.CodigoTrafo { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        string IAvisoDeCambio.Tensiones { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        string IAvisoDeCambio.Cliente { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public override string ToString()
         {
@@ -23,4 +30,3 @@ namespace AvisoDeCambio.Interfaces
 
     }
 }
-*/

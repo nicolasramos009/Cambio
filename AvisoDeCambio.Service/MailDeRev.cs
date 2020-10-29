@@ -16,7 +16,7 @@ namespace AvisoDeCambio.Service
 
             var mailItem = (MailItem)application.CreateItem(OlItemType.olMailItem);
             mailItem.To = string.Join(";", aviso.To);
-            
+
             mailItem.Subject = aviso.ToString();
             mailItem.HTMLBody = CreateHtml(aviso).Result;
             mailItem.Display();

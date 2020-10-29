@@ -206,7 +206,6 @@ namespace AvisoDeCambio.UI
             }
             MailDeRev.EnviarCorreo(aviso);
         }
-       
 
        
     }

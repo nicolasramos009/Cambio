@@ -1,12 +1,6 @@
-﻿using Microsoft.VisualBasic;
+﻿using EdmLib;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Data;
-using System.Diagnostics;
-using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using EdmLib;
 
 
 
@@ -76,10 +70,10 @@ public class Class1 : IEdmAddIn5
         string message = null;
         message = "sasasa";
         int index = 0;
-       // index = Information.LBound(ppoData);
+        // index = Information.LBound(ppoData);
         index = ppoData.GetLowerBound(0);
         int last = 0;
-       //last = Information.UBound(ppoData);
+        //last = Information.UBound(ppoData);
         last = ppoData.GetUpperBound(0);
 
         //Append the paths of all files to a message string
@@ -95,22 +89,22 @@ public class Class1 : IEdmAddIn5
         EdmVault5 vault = default(EdmVault5);
         vault = (EdmVault5)poCmd.mpoVault;
         vault.MsgBox(poCmd.mlParentWnd, message);
-    
 
 
-                if (poCmd.meCmdType == EdmCmdType.EdmCmd_Menu)
-                {
-                     if (poCmd.mlCmdID == 1)
-                     {
+
+        if (poCmd.meCmdType == EdmCmdType.EdmCmd_Menu)
+        {
+            if (poCmd.mlCmdID == 1)
+            {
                 System.Windows.Forms.MessageBox.Show("C# Add-in");
-                     }
-                }
-        
+            }
+        }
 
-                
+
+
 
     }
 
 }
 
-  
+

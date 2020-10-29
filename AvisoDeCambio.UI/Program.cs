@@ -17,9 +17,9 @@ namespace AvisoDeCambio.UI
             Application.SetCompatibleTextRenderingDefault(false);
             List<IPlano> planos = new List<IPlano> {
                 new PlanoPDM { Codigo="02-CM-CE", Revision=1, Title="PLANO DE CUBA" },
-                new PlanoPDM { Codigo="02-CM-CD", Revision=0, Title="PLANO DE TAPA" },
+               /* new PlanoPDM { Codigo="02-CM-CD", Revision=0, Title="PLANO DE TAPA" },
                 new PlanoPDM { Codigo="02-CM-CE", Revision=2, Title="PLANO" },
-                new PlanoPDM { Codigo="02-CM-CD", Revision=2, Title="PLANO" }
+                new PlanoPDM { Codigo="02-CM-CD", Revision=2, Title="PLANO" }*/
             };
             Application.Run(new Form1(planos, TipoDeCambio.Confirmado));
         }

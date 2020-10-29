@@ -49,9 +49,11 @@
             // tablaPlano
             // 
             this.tablaPlano.AllowUserToOrderColumns = true;
-            this.tablaPlano.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tablaPlano.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.tablaPlano.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.tablaPlano.Location = new System.Drawing.Point(12, 47);
             this.tablaPlano.Name = "tablaPlano";
+            this.tablaPlano.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.tablaPlano.Size = new System.Drawing.Size(1069, 132);
             this.tablaPlano.TabIndex = 1;
             // 
@@ -66,6 +68,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(12, 185);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
