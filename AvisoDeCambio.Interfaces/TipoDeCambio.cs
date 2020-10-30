@@ -2,8 +2,8 @@
 {
     public enum TipoDeCambio
     {
-        Inicial,
-        Confirmado,
-        Retirado
+        INICIAL,
+        CONFIRMADO,
+        RETIRADO
     }
 }

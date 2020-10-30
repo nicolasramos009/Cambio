@@ -21,7 +21,7 @@ namespace AvisoDeCambio.UI
                 new PlanoPDM { Codigo="02-CM-CE", Revision=2, Title="PLANO" },
                 new PlanoPDM { Codigo="02-CM-CD", Revision=2, Title="PLANO" }*/
             };
-            Application.Run(new Form1(planos, TipoDeCambio.Confirmado));
+            Application.Run(new Form1(planos, TipoDeCambio.CONFIRMADO));
         }
     }
 }

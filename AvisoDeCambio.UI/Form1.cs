@@ -35,13 +35,13 @@ namespace AvisoDeCambio.UI
             btnEnviar.Click += BtnEnviar_Click;
             switch (_tipoDeCambio)
             {
-                case TipoDeCambio.Inicial:
+                case TipoDeCambio.INICIAL:
                     label1.Text = "AVISO DE CAMBIO POSIBLE";
                     break;
-                case TipoDeCambio.Confirmado:
+                case TipoDeCambio.CONFIRMADO:
                     label1.Text = "AVISO DE CAMBIO REALIZADO";
                     break;
-                case TipoDeCambio.Retirado:
+                case TipoDeCambio.RETIRADO:
                     label1.Text = "AVISO DE CAMBIO DESESTIMADO";
                     break;
             }

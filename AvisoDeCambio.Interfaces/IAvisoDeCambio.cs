@@ -30,7 +30,7 @@ namespace AvisoDeCambio.Interfaces
 
         public override string ToString()
         {
-            return $"Aviso de Cambio: {TipoDeCambio.Confirmado}  Nota de Venta: {NotaVenta},  Cliente: {Cliente},   Codigo Trafo: {CodigoTrafo}, Potencia: {Potencia},  Tensiones: {Tensiones},   Cambiaron: {PlanosLista.Count} Planos";
+            return $"Aviso de Cambio: {TipoDeCambio.CONFIRMADO}  Nota de Venta: {NotaVenta},  Cliente: {Cliente},   Codigo Trafo: {CodigoTrafo}, Potencia: {Potencia},  Tensiones: {Tensiones},   Cambiaron: {PlanosLista.Count} Planos";
         }
     }
 
