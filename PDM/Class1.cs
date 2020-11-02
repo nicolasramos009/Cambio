@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 
 public class Class1 : IEdmAddIn5
 {
-
+    public static IEdmVault5 Vault;
 
     public void GetAddInInfo(ref EdmAddInInfo poInfo, IEdmVault5 poVault, IEdmCmdMgr5 poCmdMgr)
     {
@@ -21,6 +21,11 @@ public class Class1 : IEdmAddIn5
 
         poInfo.mlRequiredVersionMajor = 6;
         poInfo.mlRequiredVersionMinor = 4;
+
+        Vault = poVault;
+
+        //Añado el hook para las validaciones en los cambios de estado.
+        poCmdMgr.AddHook(EdmCmdType.EdmCmd_PreState);
 
 
         poCmdMgr.AddCmd(1, "C# Add-in", (int)EdmMenuFlags.EdmMenu_Nothing);
@@ -48,6 +53,9 @@ public class Class1 : IEdmAddIn5
         string name = null;
         switch (poCmd.meCmdType)
         {
+            case EdmCmdType.EdmCmd_PreState:
+                name = "PreState";
+                break;
             case EdmCmdType.EdmCmd_PostAdd:
                 name = "PostAdd";
                 break;
