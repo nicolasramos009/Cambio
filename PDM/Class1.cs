@@ -30,7 +30,7 @@ public class Class1 : IEdmAddIn5
 
         poCmdMgr.AddCmd(1, "C# Add-in", (int)EdmMenuFlags.EdmMenu_Nothing);
         //Register hooks
-
+        /*
         //Notify the add-in when a file has been added
         poCmdMgr.AddHook(EdmCmdType.EdmCmd_PostAdd);
 
@@ -42,7 +42,7 @@ public class Class1 : IEdmAddIn5
 
         //Notify the add-in when a file has been checked in
         poCmdMgr.AddHook(EdmCmdType.EdmCmd_PostUnlock);
-
+        */
     }
 
 
